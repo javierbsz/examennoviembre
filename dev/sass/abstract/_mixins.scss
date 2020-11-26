@@ -1,0 +1,28 @@
+/* MIXIN MEDIA QUERY'S*/
+@mixin mediaQuery($query) {
+    /* VARIABLES */
+    $breakpoint-small: 320px;
+    $breakpoint-medium: 768px;
+    $breakpoint-large: 1366px;
+
+    // Objeto queries
+    $queries: (
+        mobil-peke: '(max-device-width: #{$breakpoint-small}) and (orientation: portrait)',
+        mobil: '(min-device-width: #{$breakpoint-small}) and (max-device-width: #{$breakpoint-small + 100}) and (orientation: portrait)',
+        ipad: '(min-device-width: #{$breakpoint-medium}) and (max-device-width: #{$breakpoint-medium + 100}) and (orientation: portrait)',
+        ipad-horiz: '(min-device-width: #{$breakpoint-medium}) and (orientation: landscape)',
+        escritorio: '(min-width: #{$breakpoint-large})'
+    );
+
+    // Ejecución
+    @if map-has-key($queries, $query) {
+        $query-value: map-get($queries, $query);
+
+        @media only screen and #{$query-value} {
+            @content;
+        }
+    } 
+    @else {
+        @warn 'Problemas con' + $query ;
+    }
+}

@@ -1,0 +1,18 @@
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mediaQuery(mobil){
+        align-items: flex-start;
+    }
+    @include mediaQuery(ipad){
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    @include mediaQuery(escritorio){
+        .menu__logo{
+            display: none;
+        }
+    }
+}

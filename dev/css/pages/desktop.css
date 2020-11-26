@@ -1,0 +1,18 @@
+html {
+  width: 1366px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__inicio, .header__proyectos, .header__quienessomos, .header__contactar {
+  padding: 0 40px 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

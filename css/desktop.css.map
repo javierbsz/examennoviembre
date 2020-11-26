@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,MAAM;CAChB;;AAED,AAAA,MAAM,CAAA;EACF,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CACtB;;AAED,AAAA,eAAe,EAAE,kBAAkB,EAAG,qBAAqB,EAAE,kBAAkB,CAAA;EAC3E,OAAO,EAAE,UAAU;CACtB;;AAED,AAAA,CAAC,CAAA;EACG,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "../dev/sass/pages/desktop.scss"
+    ],
+    "names": [],
+    "file": "desktop.css"
+}

@@ -1,0 +1,35 @@
+//- Variables
+include ../config/config
+//- Mixins
+
+
+<!DOCTYPE html>
+html(lang="en")
+    //- HEAD
+    include head.pug
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/reset.css")
+        link(rel="stylesheet", href="/css/desktop.css")
+        block titulo
+        title pagina
+    //- BODY
+    body
+
+        //- HEADER
+        header.header
+            include header.pug
+                a.header__inicio(href="") Inicio
+                a.header__proyectos(href="") Proyectos
+                a.header__quienessomos(href="") Quienes somos
+                a.header__contactar(href="") Contactar
+
+
+        //- MAIN
+        main.main
+            main_block
+        
+        //- FOOTER
+        footer.footer
+            include footer.pug
+

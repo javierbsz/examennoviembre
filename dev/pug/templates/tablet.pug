@@ -1,31 +1,24 @@
-//- Variables
 include ../config/config
-//- Mixins
 
 
 <!DOCTYPE html>
 html(lang="en")
-    //- HEAD
-    include head.pug
-
-    //- BODY
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/reset.css")
+    link(rel="stylesheet", href="/css/tablet.css")
+    block titulo
+    title pagina
     body
 
-        //- HEADER
         header.header
             include header.pug
                 figure.header__menu
                     img.menu__logo(src="/assets/icono hamburguesa.svg", alt="logotipo")
 
-        //- MAIN
         main.main
             main_block
         
-        //- FOOTER
         footer.footer
             include footer.pug
-
-
-
-
 
