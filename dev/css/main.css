@@ -6,6 +6,7 @@ html {
 .header {
   width: 100vw;
   height: 10vh;
+  display: flex;
   background-color: #C4C4C4;
   align-items: center;
 }
