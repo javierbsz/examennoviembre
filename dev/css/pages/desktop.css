@@ -1,5 +1,6 @@
 html {
   width: 1366px;
+  height: 1687px;
 }
 
 header {
@@ -19,4 +20,10 @@ a {
 
 .header__titulo {
   padding: 0 40px 0 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }

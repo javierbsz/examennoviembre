@@ -1,5 +1,6 @@
 html{
-    width: 768px;
+    width: 834px;
+    height: 60px;
     
 }
 
@@ -7,4 +8,12 @@ html{
     display: flex;
     background-color:#C4C4C4;
     justify-content: space-between;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+}
+.tablet__img2{
+    padding: 0 0 20px 0;
 }
