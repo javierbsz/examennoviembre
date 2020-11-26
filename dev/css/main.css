@@ -1,6 +1,16 @@
 /* MIXIN MEDIA QUERY'S*/
+main {
+  display: flex;
+}
+
 .img2 {
   padding: 0 0 20px 0;
+}
+
+.vector {
+  display: flex;
+  background-color: red;
+  justify-content: center;
 }
 
 html {
